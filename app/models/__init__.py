@@ -1,1 +1,1 @@
-from app.models.user import User, ROLE_USER, ROLE_ADMIN, ROLE_MANAGER 
+from app.models.user import User, Permission, ROLE_USER, ROLE_ADMIN, ROLE_MANAGER 

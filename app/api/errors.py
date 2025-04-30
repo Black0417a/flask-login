@@ -10,6 +10,9 @@ def error_response(status_code, message=None):
     response.status_code = status_code
     return response
 
+def bad_request(message):
+    return error_response(400, message)
+
 @bp.app_errorhandler(404)
 def not_found_error(error):
     return error_response(404)
